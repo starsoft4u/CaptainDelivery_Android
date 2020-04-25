@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DD4339</color>
+    <color name="colorPrimaryDark">#e6271a</color>
+    <color name="colorAccent">#DD4339</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="bg_red">#DD4339</color>
+    <color name="bg_red_over">#e6271a</color>
+    <color name="bg_dark_gray">#383838</color>
+    <color name="bg_dark_gray_over">#282828</color>
+    <color name="sblack">#cccccc</color>
+    <color name="black">#212121</color>
+    <color name="light_gray" >#dcdcdc</color>
+
+    <color name="tab_text_over">#2d2c2c</color>
+    <color name="tab_text_normal">#9a9a9a</color>
+
+    <color name="progress_dlg_bg">#e6271a</color>
+
+    <!-- code input -->
+    <color name="underline_default_color">#CCCCCC</color>
+    <color name="underline_selected_color">#000</color>
+    <color name="hintColor">#CCCCCC</color>
+    <color name="textColor">#000</color>
+</resources>

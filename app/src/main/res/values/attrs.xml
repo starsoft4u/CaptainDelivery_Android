@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!-- Code Input View-->
+    <declare-styleable name="core_area">
+        <attr name="underline_color"
+            format="color"/>
+        <attr name="underline_selected_color"
+            format="color"/>
+        <attr name="hint_color"
+            format="color"/>
+        <attr name="text_color"
+            format="color"/>
+        <attr name="hint_text"
+            format="string"/>
+        <attr name="codes"
+            format="integer"/>
+    </declare-styleable>
+</resources>

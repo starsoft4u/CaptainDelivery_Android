@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cns.captaindelivery">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".PreferenceManager"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.VerifyPhoneActivity"    android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.VerifyEmailActivity"    android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.PersonalInformationActivity"  android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.DriverVehicleDetailsActivity"  android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.DriverVehicleTypeActivity"  android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.DriverVehicleOwnershipActivity"  android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.DriverDrivingLicenseActivity"  android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.CustomerMainActivity"   android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden" android:launchMode="singleTop"/>
+        <activity android:name=".activities.CustomerShopInfoActivity"   android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.CustomerNewOrderActivity"   android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.CustomerDeliveryLocationActivity"   android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activities.DriverMainActivity" android:screenOrientation="portrait"    android:windowSoftInputMode="stateAlwaysHidden" android:launchMode="singleTop" />
+
+
+        <!-- Facebook -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <!-- Google Map -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- FCM -->
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <service
+            android:name=".services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Camera File -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.cns.captaindelivery.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+
+        <!-- GPS Tracking -->
+        <service android:name="com.cns.captaindelivery.services.GPSService" android:stopWithTask="true"/>
+        <receiver android:name="com.cns.captaindelivery.receivers.GPSReceiver"
+
+            >
+            <intent-filter>
+                <action android:name="com.highbryds.tracker" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.MainService" android:process=":remote"></service>
+    </application>
+
+
+
+</manifest>

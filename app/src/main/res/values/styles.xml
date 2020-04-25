@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!--<item name="android:colorBackground">@color/MENU_POPUP_BACK_COLOR</item>-->
+        <!--<item name="android:textColor">@color/MENU_POPUP_ITEMS_COLOR</item>-->
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="android:background">@drawable/tab_button</item>
+        <item name="itemBackground">@drawable/menu_item_background</item>
+        <item name="itemIconTint">@drawable/menu_background</item>
+        <item name="itemTextColor">@drawable/menu_background</item>
+    </style>
+
+    <style name="RatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="colorControlNormal">#acacac</item>
+        <item name="colorControlActivated">#FFC90E</item>
+    </style>
+
+</resources>

@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "382685849185",
+    "firebase_url": "https://captaindelivery.firebaseio.com",
+    "project_id": "captaindelivery",
+    "storage_bucket": "captaindelivery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382685849185:android:a70a30a87de83f57",
+        "android_client_info": {
+          "package_name": "com.cns.captaindelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382685849185-nrqvgr8guge97m5e062t1jh1npgmdf6f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cns.captaindelivery",
+            "certificate_hash": "9890a48208bdee18b2e2d8e9a137292b3174fbdb"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPyt3ny_kr3J7cgFWbGFRGl4wuUbeZFTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382685849185-u23rtto2h7s8lrnu8j2c119n0nigc0k1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

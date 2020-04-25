@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_row"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+    <com.cns.captaindelivery.widgets.CircleImageView
+        android:id="@+id/d_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/user" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        >
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textColor="#FF323e46"
+            android:text="You reached at your destination with safe and sound.Congratx for your first ride with Captain Delivery"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            >
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="4 days ago"
+                android:textColor="@color/bg_red"
+                android:textSize="13sp"/>
+
+            <ImageView
+                android:id="@+id/imgUnread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_new_mark"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

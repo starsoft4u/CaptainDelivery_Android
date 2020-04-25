@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/layoutShopInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_location_info"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_pin_2"
+            android:drawablePadding="12dp"
+            android:hint="@string/lbl_delivery_location"
+            android:lineSpacingExtra="2dp"
+            android:textColor="#FF2b2b2b"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="24dp"
+            android:text="Accurate to 0 km"
+            android:textColor="#FFdd4339"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_street_info"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+
+            <EditText
+                android:id="@+id/editAddrDetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="@string/lbl_street_apartment_floor"
+                android:paddingLeft="1dp"
+                android:paddingRight="10dp"
+                android:textColor="#FF2b2b2b"
+                android:textColorHint="#FFc3cfd5"
+                android:textSize="15sp" />
+
+            <com.cns.captaindelivery.widgets.ClickEffectImageView
+                android:id="@+id/imgBtnPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:src="@drawable/btn_post" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

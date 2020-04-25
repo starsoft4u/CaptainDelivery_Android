@@ -1,0 +1,210 @@
+<resources>
+    <string name="app_name">CaptainDelivery</string>
+
+    <string name="facebook_app_id">336970490495014</string>
+    <string name="fb_login_protocol_scheme">fb336970490495014</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA1NmaI-cM1QVI8-yKhewr04zxYzwUee-0</string>
+    <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">AIzaSyD6l0TnHDoE3rWa9hehaB6w5r-usaW8Zrw</string>
+
+    382685849185-0egagf35jifm23udal9bku53n239ahl3.apps.googleusercontent.com
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="msg_err_request">Connection error.</string>
+    <string name="msg_err_response">Format error.</string>
+    <string name="msg_err_failed">Failed.</string>
+    <string name="msg_err_permission">Not allowed permissions.</string>
+    <string name="msg_err_input">Please enter correctly.</string>
+    <string name="msg_err_take_photo">Please take a photo.</string>
+    <string name="msg_err_select_one">Please select one.</string>
+    <string name="msg_same_phone">Please enter different phone.</string>
+    <string name="msg_activate_before">Your account must be activated.</string>
+
+    <string name="msg_exit">Press \'Back\' once more to exit.</string>
+    <string name="msg_no_data">There is no data.</string>
+    <string name="msg_cannot_get_location">Can\'t know current location.</string>
+    <string name="msg_unknown_place">Can\'t know place information.</string>
+    <string name="msg_delete_account">Do you want to cancel the registration process?</string>
+
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="btn_yes">YES</string>
+    <string name="btn_no">NO</string>
+
+    <string name="lbl_unknown">unknown</string>
+
+    <!-- login -->
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">PHONE NUMBER OR EMAIL</string>
+    <string name="lbl_password">PASSWORD</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="radio_driver">Driver</string>
+    <string name="radio_customer">Customer</string>
+    <string name="btn_forgot_password">FORGOT PASSWORD?</string>
+    <string name="btn_have_not_account">Or Haven\'t an account?</string>
+    <string name="msg_err_login_failed">Invalid account.</string>
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="lbl_verification_code">VERIFICATION CODE</string>
+    <string name="lbl_new_password">NEW PASSWORD</string>
+    <string name="lbl_confirm_password">CONFIRM PASSWORD</string>
+    <string name="lbl_forgot_password_email">Please enter your email address.</string>
+    <string name="lbl_forgot_password_code">Please check your email, and enter verification code.</string>
+    <string name="lbl_forgot_password_password">Please set your new password.</string>
+    <string name="msg_forgot_password_code">Wrong verification code.</string>
+    <string name="msg_forgot_password_email">This email address dose not exist.</string>
+    <string name="msg_forgot_password_password">Not same password.</string>
+    <string name="msg_driver">Your account is for Driver, not Customer.</string>
+    <string name="msg_customer">Your account is for Customer, not driver.</string>
+
+    <!-- signup -->
+    <string name="title_signup">Sign Up</string>
+    <string name="lbl_personal_information">Personal Information</string>
+    <string name="lbl_username">USERNAME</string>
+    <string name="lbl_email">EMAIL</string>
+    <string name="lbl_phonenumber">PHONE NUMBER</string>
+    <string name="lbl_code">CODE</string>
+    <string name="btn_have_account">Or Have an account?</string>
+    <string name="btn_next">NEXT</string>
+
+    <!-- verify mobile -->
+    <string name="title_verify_mobile">Verify Mobile</string>
+    <string name="lbl_verify_phone">You can tap Send Code button to receive verification code via SMS. \nPlease enter it after receiving code.</string>
+    <string name="lbl_enter_opt">ENTER OPT</string>
+    <string name="btn_submit">SUBMIT</string>
+    <string name="btn_change_number">CHANGE NUMBER</string>
+    <string name="btn_resend_code">RESEND CODE</string>
+    <string name="title_change_phone_number">Change Phone Number</string>
+    <string name="title_add_phone_number">Add Phone Number</string>
+    <string name="title_select_country">Select Country</string>
+    <string name="btn_send_code">SEND CODE</string>
+    <string name="lbl_old_phone_number">OLD PHONE NUMBER</string>
+    <string name="lbl_new_phone_number">NEW PHONE NUMBER</string>
+
+
+    <!-- verify email -->
+    <string name="title_verify_email">Verify Email</string>
+    <string name="lbl_verify_email">Enter the 4 digit code we sent you \nvia email to continue.</string>
+    <string name="lbl_enter_digit">Enter 4 Digit Please</string>
+    <string name="btn_change_email">CHANGE EMAIL</string>
+    <string name="title_change_email">Change Email</string>
+    <string name="lbl_old_email">OLD EMAIL</string>
+    <string name="lbl_new_email">NEW EMAIL</string>
+
+
+    <!-- driver personal information -->
+    <string name="title_personal_information">Personal Information</string>
+    <string name="lbl_address_detail">ADDRESS DETAILS &amp; LOCATION</string>
+    <string name="lbl_country">COUNTRY</string>
+    <string name="lbl_city">CITY</string>
+    <string name="lbl_region_street">REGION/STREET</string>
+    <string name="btn_continue">CONTINUE</string>
+    <string name="btn_take_photo">TAKE A PHOTO</string>
+    <string-array name="choose_photo">
+        <item>From Gallery</item>
+        <item>Take a Photo</item>
+    </string-array>
+    <string name="msg_address_map_hint">Please tap your location on map.</string>
+
+    <!-- driver vehicle detail -->
+    <string name="title_vehicle_detail">Add Vehicle Details</string>
+    <string name="lbl_brand">BRAND</string>
+    <string name="lbl_model">MODEL</string>
+    <string name="lbl_year">YEAR</string>
+    <string name="lbl_color">COLOR</string>
+    <string name="lbl_interior_color">INTERIOR COLOR</string>
+
+    <!-- driver vehicle type -->
+    <string name="title_vehicle_type">Select Vehicle Type</string>
+    <string name="lbl_select_vehicle">PLEASE CHOOSE HOW YOU WOULD LIKE TO PARTNER WITH CAPTAIN DELIVERY.</string>
+    <string name="lbl_captain_micro">CAPTAIN DELIVERY Micro</string>
+    <string name="lbl_captain_mini">CAPTAIN DELIVERY Mini</string>
+    <string name="lbl_captain_sedan">CAPTAIN DELIVERY Sedan</string>
+    <string name="lbl_captain_micro_desc1">You are a commercially insured driver.Your vehicle is a small-size or full size vehicle that comfortably seats 2 passengers or more.</string>
+    <string name="lbl_captain_micro_desc2">02 Max</string>
+    <string name="lbl_captain_mini_desc1">You are a commercially insured driver.Your vehicle is a mid-size or full size vehicle that comfortably seats 4 passengers or more.</string>
+    <string name="lbl_captain_mini_desc2">04 Max</string>
+    <string name="lbl_captain_sedan_desc1">You are a commercially insured driver.Your vehicle is a full size vehicle that comfortably seats 6 passengers or more.</string>
+    <string name="lbl_captain_sedan_desc2">06 Max</string>
+    <string name="lbl_person">Person</string>
+
+    <!-- driver vehicle ownership -->
+    <string name="title_vehicle_ownership">Vehicle Ownership Form</string>
+    <string name="lbl_full_name">FULL NAME</string>
+    <string name="lbl_full_address">FULL ADDRESS</string>
+    <string name="lbl_company_name">COMPANY NAME</string>
+    <string name="lbl_email_address">EMAIL ADDRESS</string>
+    <string name="lbl_registration_no">REGISTRATION NO OF VEHICLE</string>
+    <string name="lbl_vin_number">VIN NUMBER(Please enter full 14 digits)</string>
+    <string name="lbl_model_vehicle">MODEL OF VEHICLE</string>
+    <string name="lbl_ignition_key_number">IGNITION KEY NUMBER</string>
+
+    <!-- driver driving license -->
+    <string name="title_driving_license">Upload Driving License</string>
+    <string name="lbl_licence_number">LICENCE NUMBER</string>
+    <string name="lbl_valid_vehicle_type">VALID VEHICLE TYPE</string>
+    <string name="lbl_issued_on">ISSUED ON</string>
+    <string name="lbl_expiry_date">EXPIRY DATE</string>
+
+    <!-- customer main -->
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="scheduled">Scheduled</string>
+    <string name="notifications">Notifications</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="home">Home</string>
+    <string name="orders">Orders</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="tab_all">All</string>
+    <string name="tab_history">History</string>
+    <string name="tab_nearby">Nearby</string>
+    <string name="tab_active_orders">Active Orders</string>
+    <string name="tab_inactive_orders">Inactive Orders</string>
+
+    <!-- shop info -->
+    <string name="lbl_store">Store</string>
+    <string name="lbl_today">Today\'s</string>
+
+    <!-- Order -->
+    <string name="title_order">Order</string>
+    <string name="lbl_delivery_location">Delivery Location</string>
+    <string name="lbl_choose_delivery_location">Choose Delivery Location</string>
+    <string name="lbl_delivery_time">Delivery Time</string>
+    <string name="lbl_click_delivery_time">Click here to choose delivery time</string>
+    <string name="lbl_request_description">Request Description</string>
+    <string name="btn_done">DONE</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="msg_delivery_location">Please choose delivery location.</string>
+    <string name="msg_delivery_time">Please choose delivery time.</string>
+    <string name="msg_request_description">Please enter request description.</string>
+    <string name="lbl_order">Order</string>
+    <string name="lbl_order_on">Ordered on</string>
+    <string name="lbl_order_pending">Pending</string>
+    <string name="lbl_order_accepted">Accepted</string>
+    <string name="lbl_order_completed">Completed</string>
+    <string name="lbl_order_canceled">Canceled</string>
+
+    <!-- Delivery Location -->
+    <string name="lbl_search">Search</string>
+    <string name="lbl_street_apartment_floor">Street/Apartment/Floor</string>
+
+    <!-- Profile -->
+    <string name="title_profile">Profile</string>
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="lbl_customer_name">CUSTOMER NAME</string>
+    <string name="lbl_driver_name">DRIVER NAME</string>
+
+    <string name="crash_toast_text">Please send the details for crash error to developer.</string>
+
+</resources>
